@@ -1,0 +1,12 @@
+{
+  "name": "node_js_scratch",
+  "version": "1.0.0",
+  "description": "this is a beginner to master NodeJS",
+  "main": "helloWorld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node helloWorld.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
