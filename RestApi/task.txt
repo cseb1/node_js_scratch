@@ -1,0 +1,20 @@
+REST API-- JSON data
+
+GET/api/user - List all users
+GET/api/user/1 - get the user with id 1 
+GET/api/user/2 - get the user with id 2
+           
+
+
+post/api/user - create a new user
+
+
+patch/api/user/id - Edit the user details with id
+
+
+delete/api/user/id - Delete the user details using id
+
+
+dynamic Path Parameters
+api/user/:id
+:id means it is dynamically Parameters
