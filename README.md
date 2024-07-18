@@ -26,3 +26,16 @@ File System=>
     Create a Web Server using http module and create a log file ...
     Create a Web Server using express and do basic routing operations.
 ```
+# Fifth class
+```
+ i. create a restApi ..
+ ii. all express methods applying(GET,POST,PUT,PATCH,DELETE)
+ iii. Understanding Middleware..
+ iv. creating a custom middleware.
+ v. understanding some kind of third party middleware
+ ```
+ third party middleware link =>https://expressjs.com/en/resources/middleware.html
+
+using middleWare =>https://expressjs.com/en/guide/using-middleware.html
+
+Writting Middleware=> https://expressjs.com/en/guide/writing-middleware.html#writing-middleware-for-use-in-express-apps
