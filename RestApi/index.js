@@ -3,7 +3,41 @@ const users = require("./MOCK_DATA (1).json")
 const fs = require("fs")
 // import the third party midleware - morgan
 const morgan = require("morgan");
+// const mongoose = require("mongoose");
 
+// // connect to mongoDB
+// mongoose.connect("mongodb://127.0.0.1:27017/Test")
+// .then(()=> console.log("MongoDB connected!"))
+// .catch((err)=>console.log("MongoDB failed!!"+err));
+
+// // create a Schema
+// const userSchema=mongoose.Schema(
+//     {
+//         first_name:{
+//             type:String,
+//             required:true
+//         },
+//         last_name:{
+//             type:String
+//         },
+//         email:{
+//             type:String,
+//             required:true,
+//             unique:true
+//         },
+//         gender:{
+//             type:String,
+//             required:true
+//         },
+//         job_title:{
+//             type:String
+//         }
+
+//     }
+// )
+
+// // create a model
+// const user=mongoose.model('user',userSchema);
 const app = express();
 
 const port = 8000;
@@ -173,7 +207,7 @@ app.delete("/api/users/:id", (req, res) => {
 app.listen(port, (err) => {
     if (err) throw err;
     else {
-        console.log("Server started!");
+        console.log("Server started at port "+port);
     }
 
 })
