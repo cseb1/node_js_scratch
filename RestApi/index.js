@@ -88,6 +88,18 @@ app.post("/api/users", (req, res) => {
     // We use Middleware
     //  now or body are print in console
     // console.log(body);
+    if (!body ||
+        !body.first_name ||
+        !body.last_name ||
+        !body.email ||
+        !body.gender ||
+        !body.job_title
+
+    ) {
+        return res.status(404).json({
+            msg: "All field are required"
+        })
+    }
     users.push({
         id: users.length + 1,
         ...body
@@ -95,7 +107,7 @@ app.post("/api/users", (req, res) => {
     fs.writeFile('./MOCK_DATA (1).json', JSON.stringify(users), (err, data) => {
         if (err) throw err;
         else {
-            return res.json({ status: "success", id: users.length });
+            return res.status(200).json({ id: users.length });
         }
     });
 
